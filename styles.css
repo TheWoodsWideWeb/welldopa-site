@@ -80,7 +80,7 @@ a:focus-visible{outline:3px solid var(--orange);outline-offset:5px}
 .site-footer{display:flex;justify-content:space-between;gap:20px;padding:24px clamp(24px,4vw,70px);background:#0b1756;color:#e7e7e9;font-size:9px}
 .site-footer a{text-decoration:underline;text-underline-offset:4px}
 @media(max-width:800px){.site-header{height:72px}.site-header nav{display:none}.header-note{font-size:8px}.opening{min-height:720px}.opening-inner{padding:65px 24px 44px}.opening h1{font-size:clamp(68px,15vw,120px);line-height:.85;letter-spacing:-.08em}.opening-bottom{align-items:start;flex-direction:column}.opening-index{display:none}.reveal{padding:24px 15px 45px}.section-topline,.reveal-caption{font-size:8px}.editorial{grid-template-columns:1fr;gap:70px;padding:90px 24px}.editorial-body .eyebrow{margin-bottom:30px}.editorial h2,.standard h2{font-size:clamp(52px,11vw,86px);margin-bottom:35px}.signal{min-height:620px;padding:24px}.signal-top span:last-child{display:none}.signal-art{margin-top:70px;min-width:750px;transform:translateX(-18%)}.signal-copy{margin-top:30px;display:block}.signal h2{text-align:left;font-size:clamp(52px,10vw,82px)}.ritual{min-height:680px;padding:70px 24px}.ritual-content{display:block;margin-top:80px}.ritual-word{font-size:clamp(76px,14vw,120px)}.ritual-copy{margin-top:70px;max-width:440px}.ritual-accent{right:-30vw;bottom:-40vw}.standard{padding:85px 24px 55px}.standard-layout{display:block;margin:100px 0}.standard-text{margin-top:55px}.closing{min-height:700px;padding:75px 24px 24px}.closing h2{font-size:clamp(57px,11vw,95px)}.closing-wordmark{font-size:22vw}.site-footer{flex-wrap:wrap;line-height:1.5}}
-@media(max-width:480px){.opening h1{font-size:15.8vw}.opening h1 em{font-size:.78em}.opening-bottom p{font-size:25px}.reveal-frame img{height:390px;object-fit:cover;object-position:53% center}.reveal-caption span:last-child{display:none}.signal-art{transform:translateX(-29%)}.signal{min-height:590px}.signal h2{font-size:54px}.standard-rule{font-size:8px}.standard-rule span:last-child{display:none}.site-footer{font-size:8px}}
+@media(max-width:480px){.opening h1{font-size:15.8vw}.opening h1 em{font-size:.78em}.opening-bottom p{font-size:25px}.reveal-caption span:last-child{display:none}.signal{min-height:590px}.signal h2{font-size:54px}.standard-rule{font-size:8px}.standard-rule span:last-child{display:none}.site-footer{font-size:8px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition-duration:.01ms!important;animation-duration:.01ms!important}}
 
 /* Study 02: editorial type, a restrained support proposition, and the physical pouch reveal. */
@@ -240,3 +240,18 @@ html{scrollbar-color:var(--blue) var(--paper);scrollbar-width:thin;scroll-paddin
 @media(max-width:800px){.opening-inner{padding-top:78px}.stick-cutout{width:min(100%,530px)}.ingredient-detail-body{grid-template-columns:1fr 1fr}}
 @media(max-width:650px){.ingredient-detail{margin-top:24px}.ingredient-detail-body{grid-template-columns:1fr}.stick-cutout{width:min(100%,480px)}}
 @media(max-width:480px){.opening-inner{padding-top:74px}.opening:before{height:15px}.ingredient-detail-body p{font-size:15px}}
+
+/* Keep every product fully visible at phone widths; the hero's wide crop hid the drink and pouch. */
+@media(max-width:600px){
+  .reveal-frame{background:transparent}
+  .reveal-frame picture{display:block}
+  .reveal-frame img{width:100%;height:auto;aspect-ratio:3/2;object-fit:contain}
+  .signal{min-height:0;padding-bottom:85px}
+  .signal-art{width:100%;min-width:0;margin:55px auto 0;transform:none}
+  .signal-art svg{width:100%;height:auto}
+  .signal-copy{margin-top:42px}
+}
+@media(max-width:480px){
+  .reveal-frame{margin-inline:-15px}
+  .package-art{margin-inline:-24px}
+}
