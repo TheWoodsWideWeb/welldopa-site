@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#0d2fb7" />
-    <meta name="description" content="WellDopa Golden Citrus. A considered morning drink ritual for modern life. In development." />
+    <meta name="description" content="WellDopa Golden Citrus drink mix. Modern life is a lot. Product and packaging in development." />
     <meta property="og:title" content="WellDopa — Modern life is a lot." />
     <meta property="og:description" content="A little more room for your thoughts. Golden Citrus, coming into focus." />
     <meta property="og:type" content="website" />
@@ -12,6 +12,7 @@
     <title>WellDopa — A Little More Room</title>
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css" />
+    <script src="motion.js" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -19,7 +20,7 @@
       <a class="wordmark" href="#top" aria-label="WellDopa, back to top">WELLDOPA<span class="mark-dot" aria-hidden="true"></span></a>
       <nav aria-label="Main navigation">
         <a href="#idea">The idea</a>
-        <a href="#object">The object</a>
+        <a href="#object">The Product</a>
         <a href="#ritual">The ritual</a>
         <a href="#standard">The standard</a>
       </nav>
@@ -29,7 +30,6 @@
     <main id="main">
       <section class="opening" aria-labelledby="opening-title">
         <div class="opening-inner">
-          <p class="eyebrow opening-eyebrow">A CONSIDERED MORNING RITUAL FOR MODERN LIFE.</p>
           <h1 id="opening-title">WELLDOPA</h1>
           <div class="opening-bottom">
             <p class="pack-statement">MODERN LIFE IS A LOT.</p>
@@ -45,7 +45,7 @@
         <div class="section-topline"><span>WELLDOPA / GOLDEN CITRUS</span><span>THE FIRST LOOK</span></div>
         <h2 class="visually-hidden" id="reveal-title">Meet the Golden Citrus drink mix</h2>
         <div class="reveal-frame">
-          <img src="assets/welldopa-golden-citrus-hero.png" alt="Concept image of the cobalt WellDopa pouch and single-serving stick beside a glass of orange Golden Citrus drink" width="1536" height="1024" fetchpriority="high" />
+          <picture><source srcset="assets/welldopa-golden-citrus-hero.webp" type="image/webp" /><img src="assets/welldopa-golden-citrus-hero.png" alt="Concept image of the cobalt WellDopa pouch and single-serving stick beside a glass of orange Golden Citrus drink" width="1536" height="1024" decoding="async" fetchpriority="high" /></picture>
         </div>
         <div class="reveal-caption"><span>ONE DAILY RITUAL.</span><span>A DIFFERENT KIND OF MORNING.</span></div>
       </section>
@@ -57,7 +57,7 @@
           <h2 id="idea-title">A little more room.<br /><span>For your thoughts.</span></h2>
           <div class="idea-copy">
             <p class="lede">Messages. Scrolling. Constant switching. So much input, so little pause.</p>
-            <p class="supporting">WellDopa is a Golden Citrus morning drink mix in development, shaped by a simple idea: give the day a more intentional beginning.</p>
+            <p class="supporting">WellDopa is a Golden Citrus drink mix in development, built around a focused daily formula for a mind in constant demand.</p>
           </div>
         </div>
       </section>
@@ -72,11 +72,11 @@
             <g stroke="#f4efe5" stroke-width="1.7" opacity=".78">
               <path d="M88 332l36 -9"/><path d="M162 65l25 18"/><path d="M215 348l38 -19"/><path d="M304 118l30 11"/><path d="M328 257l36 18"/><path d="M403 451l38 -15"/><path d="M480 69l26 16"/><path d="M510 389l29 -16"/><path d="M596 161l36 19"/><path d="M666 344l25 -12"/><path d="M723 190l21 12"/>
             </g>
-            <g stroke="#f28a25" stroke-width="1.7" fill="none" opacity=".9">
+            <g class="converge" stroke="#f28a25" stroke-width="1.7" fill="none" opacity=".9">
               <path d="M190 224 Q530 260 844 260"/><path d="M280 300 Q552 271 844 260"/><path d="M354 420 Q601 302 844 260"/><path d="M380 103 Q618 222 844 260"/><path d="M560 113 Q677 237 844 260"/><path d="M632 377 Q718 290 844 260"/>
             </g>
             <circle cx="844" cy="260" r="7" fill="#f28a25"/>
-            <path d="M853 260H1160" stroke="#f28a25" stroke-width="3"/>
+            <path class="beam" d="M853 260H1160" stroke="#f28a25" stroke-width="3"/>
             <text x="1160" y="238" text-anchor="end" fill="#f4efe5" font-size="15" font-family="Arial, sans-serif" letter-spacing="2.6">GOLDEN CITRUS</text>
           </svg>
         </div>
@@ -84,33 +84,26 @@
       </section>
 
       <section class="package-story" id="object" aria-labelledby="package-title">
-        <div class="package-story-heading"><div class="section-index">02 <span>THE OBJECT</span></div><div><p class="eyebrow">THE FORM IS PART OF THE IDEA.</p><h2 id="package-title">Cobalt.<br /><span>On purpose.</span></h2><p>An unmistakable first look at the pouch. The label is still taking shape.</p></div></div>
+        <div class="package-story-heading"><div class="section-index">02 <span>THE PRODUCT</span></div><div><p class="eyebrow">THE FORM IS PART OF THE IDEA.</p><h2 id="package-title">Cobalt.<br /><span>On purpose.</span></h2><p>An unmistakable first look at the pouch and its working formula.</p></div></div>
         <div class="package-art">
-          <img src="assets/welldopa-pouch-front-back.png" width="1086" height="1448" loading="lazy" alt="Front and back of a cobalt WellDopa Golden Citrus pouch concept" />
-          <div class="pouch-ingredients" aria-label="Concept ingredient preview on the pouch back">
-            <h3>WHAT'S INSIDE</h3>
-            <div class="pouch-ingredients-columns">
-              <div><strong>THE FORMULA</strong><p>Mucuna pruriens seed extract<br />L-theanine<br />Citicoline<br />Vitamin C<br />Lemon balm extract<br />Bacopa extract<br />Wild blueberry extract<br />L-cysteine<br />L-glutathione</p></div>
-              <div><strong>GOLDEN CITRUS BASE</strong><p>Orange powder<br />Natural citrus flavor<br />Citric acid<br />Malic acid<br />Sodium citrate<br />Reb M (stevia)</p></div>
-            </div>
-            <small>INGREDIENT PREVIEW · FINAL LABEL IN DEVELOPMENT</small>
-          </div>
+          <picture><source srcset="assets/welldopa-pouch-front-back.webp" type="image/webp" /><img src="assets/welldopa-pouch-front-back.png" width="1086" height="1448" loading="lazy" decoding="async" alt="Front of the cobalt WellDopa Golden Citrus pouch concept" /></picture>
+          <picture class="package-back-art"><source srcset="assets/welldopa-pouch-back-concept.webp" type="image/webp" /><img src="assets/welldopa-pouch-back-concept.png" width="1086" height="724" loading="lazy" decoding="async" alt="Back of the pouch concept with the working Supplement Facts panel and ingredient amounts" /></picture>
         </div>
         <p class="package-note">FRONT / BACK · CONCEPT ARTWORK, NOT A FINAL LABEL.</p>
-        <div class="ingredient-mobile" aria-label="Enlarged ingredient preview from the pouch back"><h3>WHAT'S INSIDE</h3><p><strong>The formula:</strong> Mucuna pruriens seed extract, L-theanine, citicoline, vitamin C, lemon balm extract, bacopa extract, wild blueberry extract, L-cysteine, L-glutathione.</p><p><strong>Golden Citrus base:</strong> orange powder, natural citrus flavor, citric acid, malic acid, sodium citrate, Reb M (stevia).</p><small>Ingredient preview. Final label in development.</small></div>
+        <details class="ingredient-detail"><summary>READ THE WORKING FORMULA + AMOUNTS <span aria-hidden="true">+</span></summary><div class="ingredient-detail-body"><div><h3>PER STICK</h3><p>Vitamin C (as ascorbic acid) 250 mg; Mucuna seed extract (15% L-DOPA) 650 mg; lemon balm leaf extract 300 mg; Bacopa extract 300 mg; citicoline 250 mg; L-theanine 200 mg; blueberry extract 100 mg; cysteine 10 mg; glutathione 1 mg.</p></div><div><h3>OTHER INGREDIENTS</h3><p>Orange juice powder, natural citrus flavor, citric acid, malic acid, sodium citrate, rebaudioside M.</p></div><small>Working formulation and concept label. The final formula and label may change before launch.</small></div></details>
       </section>
 
       <section class="ritual" id="ritual" aria-labelledby="ritual-title">
         <div class="section-index">03 <span>THE RITUAL</span></div>
         <div class="ritual-content">
-          <div class="stick-stage"><figure class="stick-photo"><img src="assets/welldopa-stick-photo.png" width="1086" height="1448" loading="lazy" alt="Photographic concept of a sealed cobalt WellDopa Golden Citrus drink-mix stick leaning against pale stone" /></figure><span class="stick-stage-caption">THE DAILY UNIT / ONE STICK</span></div>
+          <div class="stick-stage"><figure class="stick-cutout"><picture><source srcset="assets/welldopa-stick-cutout.webp" type="image/webp" /><img src="assets/welldopa-stick-cutout.png" width="1086" height="1448" loading="lazy" decoding="async" alt="Realistic cobalt foil WellDopa Golden Citrus drink-mix stick with crimped ends" /></picture></figure><span class="stick-stage-caption">THE DAILY UNIT / ONE STICK</span></div>
           <div class="ritual-copy"><p class="eyebrow">GOLDEN CITRUS / DRINK MIX</p><h2 id="ritual-title">A bright start.<br />A focused intention.</h2><p>One drink. One moment before the day starts moving. A distinctive citrus ritual, built for the pace of real life.</p><span>ONE DAILY SERVING / IN DEVELOPMENT</span></div>
         </div>
       </section>
 
       <section class="standard" id="standard" aria-labelledby="standard-title">
         <div class="section-index">04 <span>THE STANDARD</span></div>
-        <div class="standard-layout"><div><p class="eyebrow">CONSIDERED BY DESIGN</p><h2 id="standard-title">Only what earns<br /><i>its place.</i></h2></div><div class="standard-text"><p>No race to 99 ingredients. We are developing WellDopa with intention, asking what belongs in the glass and what does not.</p><p>When the formula and label are ready, we will show you exactly what is in it.</p></div></div>
+        <div class="standard-layout"><div><p class="eyebrow">MADE WITH PURPOSE</p><h2 id="standard-title">Only what earns<br /><i>its place.</i></h2></div><div class="standard-text"><p>No race to 99 ingredients. The working formula is focused on what earns its place in the glass.</p><p>Turn the bag around: the ingredients and proposed amounts are there to see. The final label will be confirmed as the product develops.</p></div></div>
         <div class="standard-rule"><span>INTENTION</span><span>TRANSPARENCY</span><span>THE DAILY RITUAL</span></div>
       </section>
 
